@@ -36,7 +36,7 @@ jobs:
           R -e 'renv::restore()'
 
       - name: Run update script
-        run: Rscript update.R
+        run: Rscript script.r
 
       - name: Commit and push if changed
         run: |
