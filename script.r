@@ -4,7 +4,7 @@ library(git2r)
 library(renv)
 
 renv::activate()
-renv:restore()
+renv::restore()
 
 repo_url <- 
   "https://github.com/V2RAYCONFIGSPOOL/V2RAY_SUB"
