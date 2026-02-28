@@ -39,7 +39,12 @@ jobs:
         run: |
           R -e 'install.packages("renv")'
           R -e 'renv::restore()'
-
+          
+      - name: git config
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          
       - name: Run update script
         run: Rscript script.r
 
